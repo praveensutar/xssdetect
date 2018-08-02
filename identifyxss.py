@@ -24,8 +24,8 @@ try:
         payload = payload
         new_url = url+'/'
         xss_url = new_url+payload
-        r = requests.get(xss_url, verify=False)
-        if payload.lower() in r.text.lower():
+        res = requests.get(xss_url, verify=False)
+        if payload.lower() in res.text.lower():
             print("####################################################################################")
             print("########## Vulnerable Payload: " + xss_url)
             print("####################################################################################")
