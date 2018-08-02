@@ -29,8 +29,6 @@ try:
             print("####################################################################################")
             print("########## Vulnerable Payload: " + xss_url)
             print("####################################################################################")
-            if(payload not in vuln):
-                vuln.append(payload)
         else:
             print("URL Not vulnerable!!")
 except:
