@@ -1,7 +1,7 @@
 # xssdetect
 This utility will identify the XSS vulnerability in URL
 
-Steps to Launch
+Steps to Launch <br>
 1 ) https://github.com/praveensutar/xssdetect.git <br>
 2 ) cd xssdetect  <br>
 3 ) python identifyxss.py  <br>
