@@ -26,7 +26,9 @@ try:
         xss_url = new_url+payload
         r = requests.get(xss_url, verify=False)
         if payload.lower() in r.text.lower():
-            print("Vulnerable: " + payload)
+            print("####################################################################################")
+            print("########## Vulnerable Payload: " + xss_url)
+            print("####################################################################################")
             if(payload not in vuln):
                 vuln.append(payload)
         else:
